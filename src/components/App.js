@@ -3,6 +3,7 @@ import HogList from "./HogList";
 import Nav from "./Nav";
 import AddHogForm from "./AddHogForm";
 import hogsData from "../porkers_data.js";
+import Filter from "./Filter.js"; // Corrected file path
 
 function App() {
     const [hogs, setHogs] = useState(hogsData);
@@ -31,9 +32,13 @@ function App() {
 
     return (
         <div className="App">
-            <Nav
-                setFilterGreased={setFilterGreased}
-                setSortCriteria={setSortCriteria}
+            <Nav />
+            {/* Added Filter component usage here */}
+            <Filter 
+                filterGreased={filterGreased} 
+                setFilterGreased={setFilterGreased} 
+                sortCriteria={sortCriteria} 
+                setSortCriteria={setSortCriteria} 
             />
             <AddHogForm onAddHog={handleAddHog} />
             <div className="ui grid container">

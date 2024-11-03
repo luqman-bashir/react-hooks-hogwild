@@ -27,7 +27,7 @@ function AddHogForm({ onAddHog }) {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="addHogForm">
             <h3>Add a New Hog</h3>
             <input
                 type="text"
