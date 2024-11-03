@@ -29,7 +29,6 @@
 - Re-render components by setting state
 
 ## What we have so far
-[HogsWild](https://celadon-moonbeam-9354c1.netlify.app/)
 - A file containing all our hog data (`./src/porkers_data.js`) imported into `App.js`
 - A `<Nav>` component rendered in our `App.js`
 
@@ -56,6 +55,7 @@ single responsibility functions. React apps can quickly become tangled and hard
 to debug if built without best practices!
 
 ## live server
+[HogsWild](https://celadon-moonbeam-9354c1.netlify.app/)
 
 
 ## Styling
